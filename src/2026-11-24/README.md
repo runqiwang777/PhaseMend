@@ -1,0 +1,3 @@
+# Source snapshot notes
+
+These files are the environment-bound source snapshot used for the 2026-11-23 exploratory MuJoCo trial. `range_contact_qp_gait.py` is the controller restored from the complete 36-second run; SONIC initializes the robot, then this independent contact-phase QP supplies the tracking torques. The runner and worker reference the original WSL checkout under `/home/wangrunqi/sonic_takeover_share_20261114`; they are not a clean standalone install package. The upstream SONIC source, model weights, CMU source data, and raw run logs are intentionally not copied here. See `reports/2026-11-24/wholebody-alignment-stage.md` for tested scope and limitations.

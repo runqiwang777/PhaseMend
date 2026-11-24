@@ -1,0 +1,88 @@
+{
+  "case": {
+    "id": "human_gait_fullbody_retarget_l100_aL120_R100_human_reference",
+    "group": "full_body",
+    "pose": "B_balanced_2cm",
+    "repetition": 1,
+    "comparison_method": "wholebody_contact_phase_kinematic_retarget",
+    "source": "CMU 13_30 prerecorded motion; 9.250–13.250 s; 9x slowed; 50Hz operator updates; mode=human_reference",
+    "motion_scale": 0.1,
+    "part_motion_scales": {
+      "lower": 0.1,
+      "arms": 0.12,
+      "arms_left": 0.12,
+      "arms_right": 0.1,
+      "torso": 0.1,
+      "root": 0.1,
+      "feet": 0.1
+    },
+    "operator_update_hz": 50.0,
+    "controller_mode": "human_reference",
+    "motion_overlay_gain": 1.0,
+    "gait_speed_scale": null,
+    "playback_slowdown": 9.0
+  },
+  "failure": null,
+  "session_exit": 0,
+  "start": 136.315786144,
+  "end": 235.773617545,
+  "failure_at": null,
+  "events": [
+    {
+      "action": "human_reference_started",
+      "t": 136.315786144
+    },
+    {
+      "action": "human_end",
+      "t": 235.773617545
+    },
+    {
+      "action": "automatic_reference_end",
+      "t": 235.777774592
+    }
+  ],
+  "guards": {
+    "root_height_min_m": 0.7,
+    "root_xy_drift_max_m": 0.15,
+    "root_xy_speed_max_m_s": null,
+    "physics_stale_max_s": 0.25
+  },
+  "preflight_limits": {
+    "duration_s": 36.0,
+    "sample_period_s": 0.02,
+    "sample_rate_hz": 50.0,
+    "sample_count": 1801,
+    "operator_update_hz": 50.0,
+    "run_mode": "human_reference",
+    "overlay_gain": 1.0,
+    "max_reference_speed_rad_s": 0.7160423654619774,
+    "max_reference_acceleration_rad_s2": 0.73790202817709,
+    "first_reference_max_delta_from_base_rad": 0.0,
+    "max_reference_step_rad": 0.014289308382205546
+  },
+  "scheduler": {
+    "type": "fixed source-time grid",
+    "operator_update_hz": 50.0,
+    "max_reference_step_rad": 0.014289308382205546
+  },
+  "max_joint_clip_rad_observed": 0.0,
+  "input_samples": 1801,
+  "source_contract": {
+    "dataset": "CMU 13_30",
+    "live_camera": false,
+    "motion_scale": 0.1,
+    "part_motion_scales": {
+      "lower": 0.1,
+      "arms": 0.12,
+      "arms_left": 0.12,
+      "arms_right": 0.1,
+      "torso": 0.1,
+      "root": 0.1,
+      "feet": 0.1
+    },
+    "preflight_directory": "/mnt/d/Github/PhaseMend/workspace/wholebody_pose_retarget_root010_lower010_f010_t010_aL120_R100_slow9_col5mm_w1000_foot3mm_descfix_dirw2_rootslack050_quatfix",
+    "overlay_gain": 1.0,
+    "controller_mode": "human_reference",
+    "method": "wholebody joint-pose retarget with stance anchors and swing-foot targets"
+  }
+}

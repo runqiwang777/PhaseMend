@@ -1,0 +1,45 @@
+{
+  "case": "human_gait_fullbody_retarget_l100_aL120_R100_human_reference",
+  "passed": true,
+  "checks": {
+    "no_runner_failure": true,
+    "session_exit_zero": true,
+    "returned_to_AUTO": true,
+    "no_fall_events": true,
+    "root_height_guard_passed": true,
+    "root_drift_guard_passed": true,
+    "root_speed_guard_passed": true,
+    "joint_limit_projection_guard_passed": true,
+    "reference_limits_preflight_passed": true
+  },
+  "metrics": {
+    "sim_samples": 2229,
+    "fall_events": [],
+    "actual_root_min_z_m": 0.7606330929458612,
+    "actual_root_drop_m": 0.012447820880862936,
+    "actual_root_xy_drift_m": 0.14731574619948395,
+    "actual_root_xy_speed_max_m_s": 0.20118585557619972,
+    "actual_knee_excursion_rad": [
+      0.5516226627257352,
+      0.5709223535840002
+    ],
+    "actual_foot_xy_drift_m": [
+      0.030763146277559796,
+      0.04111627728469417
+    ],
+    "actual_wrist_xyz_excursion_m": [
+      [
+        0.0743198800997582,
+        0.23487839650935305,
+        0.1993364235863465
+      ],
+      [
+        0.06188959666155297,
+        0.24087604455636163,
+        0.21039744405174343
+      ]
+    ],
+    "double_support_fraction": 0.7393449977568416
+  },
+  "scope": "one simulation exploratory trial; not reliability gate acceptance"
+}

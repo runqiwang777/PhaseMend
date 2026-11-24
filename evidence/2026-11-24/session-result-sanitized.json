@@ -1,0 +1,130 @@
+{
+  "phase": "completed",
+  "error": null,
+  "case": {
+    "id": "human_gait_fullbody_retarget_l100_aL120_R100_human_reference",
+    "group": "full_body",
+    "pose": "B_balanced_2cm",
+    "repetition": 1,
+    "comparison_method": "wholebody_contact_phase_kinematic_retarget",
+    "source": "CMU 13_30 prerecorded motion; 9.250–13.250 s; 9x slowed; 50Hz operator updates; mode=human_reference",
+    "motion_scale": 0.1,
+    "part_motion_scales": {
+      "lower": 0.1,
+      "arms": 0.12,
+      "arms_left": 0.12,
+      "arms_right": 0.1,
+      "torso": 0.1,
+      "root": 0.1,
+      "feet": 0.1
+    },
+    "operator_update_hz": 50.0,
+    "controller_mode": "human_reference",
+    "motion_overlay_gain": 1.0,
+    "gait_speed_scale": null,
+    "playback_slowdown": 9.0
+  },
+  "metrics": {
+    "phase": "completed",
+    "error": null,
+    "active_seconds": 101.620833218,
+    "published_frames": 5049,
+    "debug_samples": 5081,
+    "physics_samples": 2263,
+    "fall_count": 0,
+    "publish_hz": 49.684769923116335,
+    "debug_hz": 49.99937139668248,
+    "realtime_factor": 0.44532826892739386,
+    "spring_disabled": true,
+    "base_height_min_m": 0.7606330929458612,
+    "base_height_max_m": 0.7895195852560662,
+    "actual_base_displacement_m": 0.06967518619472224,
+    "actual_base_path_length_m": 0.9664774805659357,
+    "tracking_rmse_rad": 0.20081015508190364,
+    "left_arm_tracking_rmse_rad": 0.16807392790492817,
+    "controller_target_to_published_nearest_rmse_rad": {
+      "p50": 1.2400873687409261E-08,
+      "p95": 1.5480033760843984E-08,
+      "max": 1.8952723637132984E-08
+    },
+    "target_observation_lag_ms": {
+      "p50": 151.7911844999844,
+      "p95": 152.96640445000662,
+      "max": 169.36325099999294
+    },
+    "max_reference_edit_rad": 0.0,
+    "left_shoulder_actual_range_rad": 0.12279829382896418,
+    "left_arm_reference_speed_max_rad_s": 0.3320452607320261,
+    "left_arm_reference_accel_max_rad_s2": 38.51125283103952,
+    "intervention_selected_speed_max_rad_s": 0,
+    "intervention_selected_accel_max_rad_s2": 0,
+    "edit_compute_ms": {
+      "p50": 0.7125710000082108,
+      "p95": 0.9545338000009439,
+      "max": 61.48842900000773
+    },
+    "physics_sample_gap_ms": {
+      "p50": 39.46109100000683,
+      "p95": 100.59405740000634,
+      "max": 215.77683499998557
+    },
+    "feedback_sample_gap_ms": {
+      "p50": 19.99223899998981,
+      "p95": 21.162650899999846,
+      "max": 37.55376799998089
+    },
+    "publish_interval_ms": {
+      "p50": 20.000760499996773,
+      "p95": 20.084085599989976,
+      "max": 65.34140799999477
+    },
+    "scheduling_lateness_ms": {
+      "p50": 0.10779895836776632,
+      "p95": 0.18756118097940078,
+      "max": 122.58673499991346
+    },
+    "final_editor_state": "automatic",
+    "controller_timing_sampled_ms": {
+      "observation": {
+        "p50": 4.747,
+        "p95": 4.96,
+        "max": 5.351
+      },
+      "policy": {
+        "p50": 3.56,
+        "p95": 3.8331999999999997,
+        "max": 4.282
+      },
+      "observation_to_motor": {
+        "p50": 8.328,
+        "p95": 8.6532,
+        "max": 9.389
+      }
+    },
+    "checks": {
+      "no_runtime_error": true,
+      "actual_controller_feedback": true,
+      "spring_disabled": true,
+      "no_fall": true,
+      "initialization_no_fall": true,
+      "spring_external_force_zero": true,
+      "realtime": false,
+      "publish_rate": true,
+      "target_received": true,
+      "actual_robot_translation": false
+    },
+    "verified": false,
+    "resources": {
+      "max_rss_mib": {
+        "sim": 1441.23828125,
+        "controller": 351.95703125,
+        "publisher": 98.7265625,
+        "viewer": 0
+      },
+      "max_sum_rss_mib": 1879.421875,
+      "min_wsl_available_mib": 5607.140625,
+      "nvml_gpu_peak_mib": 202,
+      "caveat": "RSS sums may double count shared pages; WSL NVML is not exact total VRAM."
+    }
+  }
+}
